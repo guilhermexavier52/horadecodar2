@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript9
+
+    </title>
+</head>
+ <script>
+    //Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu)
+
+// Lê o ano de nascimento do usuário
+let anoNascimento = prompt("Informe o seu ano de nascimento:");
+
+// Calcula a idade atual
+let anoAtual = new Date().getFullYear();
+let idade = anoAtual - anoNascimento;
+
+// Verifica se a pessoa pode votar
+if (idade >= 16) {
+  alert("Você pode votar este ano!");
+} else {
+  alert("Você ainda não pode votar este ano.");
+}
+
+
+ </script>
+
+<body>
+
+    
+</body>
+</html>

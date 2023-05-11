@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript4</title>
+    
+    <script>
+//Faça um programa para ler 3 valores informados pelo o usuario (considere que não serão informados valores iguais) e escreva a soma dos dois maiores em Javascript
+
+let valor1 = parseFloat(prompt("Digite o primeiro valor:"));
+let valor2 = parseFloat(prompt("Digite o segundo valor:"));
+let valor3 = parseFloat(prompt("Digite o terceiro valor:"));
+
+// Verifica se há valores iguais
+if (valor1 == valor2 || valor1 == valor3 || valor2 == valor3) {
+  alert("Os valores informados devem ser diferentes.");
+} else {
+  let soma = valor1 + valor2 + valor3;
+  let menorValor = Math.min(valor1, valor2, valor3);
+  let somaDosMaiores = soma - menorValor;
+  alert("A soma dos dois maiores valores é " + somaDosMaiores);
+}
+    </script>
+    
+</body>
+</html>
